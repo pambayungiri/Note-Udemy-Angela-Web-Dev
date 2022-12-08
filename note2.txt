@@ -1,0 +1,219 @@
+====== web development bootcamp ======
+angela udemy #2
+
+162. adding event listener to a button.
+
+event listener when it got click 
+
+document.querySelector("button").addEventListener("click", handleClick);
+
+function handleClick() {
+  alert("i got clicked);
+}
+
+document.querySelector("button").addEventListener("click", function () { alert("i got clicked); }
+);
+
+
+calling function in javascript without the () so it's not deploy immidiately
+
+passing a function as an input so it can be called at a later time.
+
+163. Higher Order Functions and Passing functions as Arguments.
+
+higher order functions are function that can take other functions as an input
+
+cara menggunakan debbugger di chrome adalah dengan cara click tanda pause pause script excecution yang ada di side panel kanan
+
+function add(num1, num2) {
+    var result = num1 + num2;
+    return result;
+}
+function sub(num1, num2) {
+    var result = num1 - num2;
+    return result;
+}
+function mtp(num1, num2) {
+    var result = num1 * num2;
+    return result;
+}
+function dvd(num1, num2) {
+    var result = num1 / num2;
+    return result;
+}
+
+function calculator(num1, num2, operator) {
+    var result = operator(num1, num2);
+    return result;
+}
+
+165. how to play sound on website
+
+var audio = new Audio('sounds/tom-1.mp3');
+    audio.play();
+
+document.querySelectorAll("button")[i].addEventListener("click", handleClick);
+
+function handleClick() {
+    this.style.color = "red";
+
+this function output is document.querySelectorAll("button")[i]
+
+166. A deeper understanding of javascript object 
+
+var bellBoy1Name = "timmy";
+var bellBoy1Age = 19;
+var bellBoy1HasWorkPermit = true;
+var bellBoy1Language = ["french", "english"];
+
+it can be write to be an object 
+
+var bellBoy1 = {
+  name: "Timmy",
+  age: 19,
+  hasWorkPermit: true,
+  languages: ["French", "English"]
+}
+
+to call individual value in there use 
+bellBoy1.name >> Timmy
+
+var houseKeeper1 = {
+  yearsOfExperience: 12,
+  name: "Jane",
+  cleaningRepertiore : ["bathroom","lobby","bedroom"]
+}
+
+houseKeeper1.name >> jane 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+}
+
+tocall it/ use it/ initialise it
+var bellBoy1 = new BellBoy("Timmy", 19, true, ["French","English"]);
+
+this is what do you call Constructor Function, the name for constructor function must be capitalized in the begining. 
+
+the constructor function it's not an object. it's a blueprint to make a similar object.
+
+167. how to use switch statement in javascript
+
+switch statement is like if statement 
+
+    switch (key) {
+        case value:
+            
+            break;
+    
+        default:
+            break;
+    }
+
+i still confuse about this
+
+168. Objects, their methods and the dot notation
+
+methods 
+
+var bellBoy1 = {
+  name: "Timmy",
+  age: 19,
+  hasWorkPermit: true,
+  languages: ["French", "English"]
+  moveSuitcase: function() {
+    alert("may I take your suitcase?")
+    pickUpSuitcase();
+    move();
+  }
+}
+
+call the methods
+bellBoy1.moveSuitcase();
+
+the different between the methods and the properties is the ()
+bellBoy1.name;
+bellBoy1.moveSuitcase();
+
+to make a methods in constructor function
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+  this.moveSuitcase: function() {
+    alert("may I take your suitcase?")
+    pickUpSuitcase();
+    move();
+  }
+}
+
+how to call the function 
+housekeeper1.clean();
+
+171. Using Keyboard Event Listeners to Check for Key Presses
+
+element.addEventListener(event, function, useCapture)
+
+to check the output of the event 
+element.addEventListener(event, function(event){ console.log(event) } )
+
+172. Understanding Callbacks and How to respond to events
+
+Higher order Function 
+function that able to take function as an input 
+the son, the function that passed in as an input is called callback function
+
+document.addEventListener("keypress", respondToKey(event));
+
+function respondToKey(event){
+  console.log("Key pressed.");
+}
+--------------------------------------
+var x;
+
+function anotherAddEventListener(event, callback) {
+
+    var eventThatHappened = {
+        eventType : "keypress",
+        key : "a",
+        durationOfKeyPress : 2
+    }
+    if (eventThatHappened.eventType === event) {
+        callback(eventThatHappened);
+    }
+}
+
+function eventCallback(isinya) {
+    console.log(isinya.key);
+    x = isinya.key;
+}
+
+how to call it 
+anotherAddEventListener("keypress", eventCallback); >> x = a
+
+------------------------------------
+how to do debugger is 
+in the console type 
+debugger;
+code that want to be debug
+
+callback is important!!!!
+
+
+173. adding animation to a website
+
+function buttonAnimation(currentKey) {
+
+    var activeButton = document.querySelector("." + currentKey);
+
+    activeButton.classList.add("pressed");
+    setTimeout(function () {
+        activeButton.classList.remove("pressed");        
+    }, 100);
+}

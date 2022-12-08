@@ -1,0 +1,1158 @@
+====== web development bootcamp ======
+angela udemy 
+
+get the most of the course 
+watch it first and try it by yourself 
+taking a few note while video is playing 
+playback speed can be use
+strugling on the section bookmarked it and try again 
+practice to master thing 
+getting stuck use tool like stackoverflow 
+
+section2.12.html
+
+html = hypertext markup languange
+from markup manuscript
+heading element from <h1> to <h6>
+
+documentation 
+mozilla development network (mdn)
+w3schools.com 
+devdocs.io
+
+<br> to space the line
+
+section2.13.html
+
+the anatomy of html tag
+there is start tag content end tag 
+<br> self closing tag 
+<hr> horizontal rule self closing tag
+you can right click and inspect on the element that you interested in 
+<hr size = "3">
+(hr) = html element 
+(size = "3") = html attribute
+<center> to center te sentence
+<!-- comment -->
+
+section2.14.html
+
+
+web.archive.org the internet wayback machine
+thomas h. cormen website looks old 
+jon kleinberg
+donald e knuth
+
+section2.15.html
+
+html personal site 
+emmet for code template 
+if you wanna look emmet reference go to docs.emmet.io/cheat-sheet/
+meta char set is utf-8 it is standard
+unicode-table.com 
+view page source on website that you want to see the code 
+
+meta description for search engine 
+
+section2.16.html
+
+<p> paragraph
+<em> and <i> italic
+<strong> and <b> blod 
+cek the difference
+
+section2.17.html
+
+bullet list html mdn
+HTML list 
+<ul> an un ordered list bullet 
+<ol> an ordered list number bullet
+
+section2.18.html
+
+html image element self closing tag 
+<img src="angela.png">
+source can be url or local image that have same directory of the html website
+you can upload in photobucket
+<img height // to define scale
+<img src // source
+<img alt // alt if source gone 
+
+section2.19.html
+
+html links and anchor tags
+<a> anchor tags for hyperlink 
+<a href="http">link text</a>
+to go to link in another page of your website do this
+<a href="file in the html folder.html"
+
+section3.21.html
+
+html tables
+<table>
+<tr> table row
+<td> table data like cell
+<thead>
+<tr>
+<th>
+<tbody>
+<tr>
+<td>
+<tfoot>
+deprecated is downgrade (no longer recommended to use)
+table from html is deprecated
+
+row itu horizontal 
+cell itu vertical
+
+section3.22.html
+
+using html tables for layout 
+<td for image
+<td for text 
+<table cellspacing="percentage">
+it has to be in the table element
+
+section3.24.html
+
+how to type emoji 
+with touch keyboard or win+. or win+;
+
+section3.25.html
+
+copy and paste lead to disaster so watchout
+<th colspan="4"> to merge
+
+section3.26.html
+
+html form
+<form action="index.html"
+<label>Your Name:</label>
+<input type="text" name="Your Name" value="">
+<input type="color" name="" value="">
+<input type="checkbox" name="" value="">
+<input type="submit" name="">
+<label>password:</label>
+<input type="password" name="" value="">
+<input type="file" name="" value="">
+<input type="date" name="" value="">
+<input type="radio" name="" value="">
+<input type="range" name="" value="">
+<input type="email" name="Your Email" value="">
+<textarea name="name" id="" cols="30" rows="10">
+<form action="mailto:pambayungiri1494@gmail.com" mehod="post" enctype="text/plain">
+enctype is to make so the input is encode plain text
+
+section3.28.html
+
+need to host website somewhere
+have free solution for the website 
+the server call github.com
+create new repository
+repository is a folder in the cloud going to store all the project 
+changes and track it 
+add read me is important
+the file name should be index
+https://pambayungiri.github.io/cv/
+how to activated github pages is go to setting pages source main
+
+section4.32.css
+
+css = cascading style sheets
+<font>
+<center>
+<h1 bgcolor="#990000"
+to make layout from html with table is frustating
+<body style="background-color: blur;">
+colorhunt.co
+bookmarked css color mdn to know color
+
+section4.33.css
+internal css
+how to use css to not repeatedly copy and paste the exact same thing in attribute
+write <style> in <head>
+and choose element that you want to edit 
+for exp body { background-color: blue; }
+look at syntax is usefull
+ <style>
+        body{
+            background-color: #EAF6F6;
+        }
+        hr{
+            /*
+            border-top-style: dotted;
+            border-left-style: none;
+            border-right-style: none;
+            border-bottom-style: none;
+            */
+            /*
+            border-style: none;
+            border-top-style: dotted;
+            */
+            border-style: dotted none none;
+            border-width: 8px;
+            border-color: rgb(181, 194, 194);
+            width: 5%;
+        }
+        img{
+            height: 200px;
+        }
+    </style>
+
+section4.34.css
+
+external css
+you can make 1 file css to apply to all pages of the website
+<link rel="stylesheet" href="/css/section4.34.css" <<<<it worked
+<link rel="stylesheet" href="css/section4.34.css" <<<<it doesn't worked
+/ <<<< inside the root
+
+section4.35.css
+
+how to debug CSS Code
+the workflow for debugging
+the first is chrome develepor tool (three doots>moretools>chrome dev tool)
+see the console if there's anything wrong 
+seee the element and styles see that something is overwritten or not 
+the most importan is in the file in the next element inlinecss>internal css>external css
+
+section4.36.css
+
+the anatomy of css syntax
+css syntax is the grammar of the css language
+selector{ property : value; }
+who          what        how
+the best practice is the property is in alphabetical order 
+
+section4.37.css
+
+css selectors
+emojipedia.org
+css tag include all in html tags to specify you need class in the tag that you want to specify
+to target a class use .and the name of the class
+
+section4.38.css
+
+classes vs .id
+the heriarki class selctor = id selector > tag selector
+when you use id and classes is 
+id is unique only can use for single element in the page
+class is use it to group related element that have similar style
+.broccoli
+.circular
+<img class="broccolli circular"
+there is a pseudo class
+:hover
+
+section5.42.css
+
+what are favicons
+icon beside title tab
+favicon.cc
+<link rel="icon" href="favicon.ico">
+
+section5.43.css
+
+HTML Divs
+<div special element that allow to devide content to structured each div seperately
+devided each box so we can edit seperately
+    <div>
+        <h1>I'm Pambayun Giri Harimurti.</h1>
+        <p>a engineer.</p>
+    </div>
+
+div {
+    background-color: #F6F6C9;
+    margin: 0px;
+}
+
+
+section5.44.css
+
+the box model of website styling 
+the box model
+div is box has height and width 
+width:100%; 
+width:100px
+border = outline 
+border:solid:
+boder-width = width of the outline 
+if the box 200px with the border-width 50px total width is 300px
+border-width: 0px 10px 20px 30px; its the border clockwise 
+padding is the space between content inside the box of div
+padding:20px
+margin is the blank space outside the div and outline
+margin:10px:
+
+Css Box Model :
+margin
+border
+background-color (doesn't effected by padding)
+background-image (doesn't effected by padding)
+padding
+content (get effected by padding)
+
+Section5.45.css
+
+you can make underline by
+.pro {
+    text-decoration: underline;
+}
+
+Css display properties
+block 
+inline
+inline-block
+none
+
+common block display element :
+p paragraph
+h headers
+div divisions
+ol ul li list and list items
+form form
+box that take up the whole width of the screen in the page
+
+common inline display element :
+span spans
+img images
+a anchor
+inline only takes up as much space as is need to in height and width nested to box
+<span> inline element can be used to edit a part of sentence
+you can use span stand anlone to
+ <p>an <span class="pro">eng</span>ineer</p>
+with inline element you can't change the width of the box
+you can change the display value to anything
+in css properties {display: inline/block/inline-block/none
+
+inline block :
+can change width and able to make box goes to the same line
+we consider img for inline block now later maybe change
+
+none:
+is dissapiaring the box 
+
+visibility: 
+is dissapiaring the box but keeps the original posisition but can't be seen 
+
+<p>hello</p>
+<p class="p2">world</p>
+<span>hello</span>
+<span>world</span>
+
+
+p {
+    background-color: red;
+    width: 100px;
+    display: inline;
+}
+
+p {
+    background-color: red;
+    width: 100px;
+    display: inline-block;
+}
+
+span {
+    background-color: blue;
+    width: 100px;
+    display: block;
+}
+
+.p2 {
+    display: none;
+}
+
+.p2 {
+    visibility: hidden;
+}
+
+Section5.47.css
+
+CSS Static and Relative Positioning 
+CSS Positioning 
+1. Content is Everything 
+inline only take up as much width and height as the content 
+block eventhough take up 100% width the height is determined by the content 
+2. Order Comes From Codes
+3. Children Sit On Top of Parents
+z dimension determined which element is display first 
+
+Position properties
+1. Static Position
+2. Relative
+it doesn't effect the position of anything else on the screen
+if you move the box the original position still there but the box move and doesn't effect anything else
+the box can dissapeared
+3. Absolute
+4. Fixed
+
+Coordinates properties
+img{top : 50px;}
+top
+bottom
+left
+right
+
+Section5.48.css
+
+absolute positioning 
+the chlid box movement absolute to the parent
+
+fixed postioninng
+if you scroll the fixed box, the box will stay not scrolled up 
+
+Section5.49.css
+the dark art of centering the img with css
+the easiest way is the property text-align
+the property must be set inside the parent container
+text-align work if we have inline or full width block element
+block with width set center it with auto value in margin
+margin: 0 auto 0 auto;
+
+Section5.50.css
+
+font styling in our personal sites
+property 
+font-family: serif, sans serif, monospace
+by default is serif 
+web safe font will able to render almost all platform
+cssfontstack.com
+is the place to know what font to choose from the all website
+fonts.google.com
+to search font for embbed
+font embedding to download font and put it in website
+merriweather font
+sacramento font
+montserrat font
+
+Section5.52.css
+
+Adding Content to Our Website
+lorem ipsum
+it used to place text paragraph in the web before you have a content
+loremipsumgenerator.com
+lorem-ipsum.perbang.dk
+flaticon.com
+giphy.com
+
+Section5.53.css
+
+CSS sizing
+font-sizing 
+if the user change the default font size for the page the font-sizing doesn't change because it's not dynamic 
+don't use pixel use percantage 
+16px = 100%
+another way use em
+16px = 100%  = 1em
+font-sizing is add up from the parent for percentage and em so watchout, but for the pixel because is static sizing it's not adding up
+but there is a way to use it with em is with rem (root em)
+recomended using rem
+use the box model with pixel it's more recommended
+preffered way to use line height is only answer value with number only
+
+Section5.58.css
+
+CSS float and clear 
+floating image
+float: left
+float is wrap around 
+clear is the opposite of wrap around
+only use float when it's necesary ( wrapping text around a certain element )
+button generator
+https://css3buttongenerator.com/
+how to improve css and html
+https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3
+
+section 6
+
+63. what is bootstrap
+
+codeply like codepen but can add framework like bootstrap
+
+64. how to install bottstrap 
+
+cdn content delivery network ( is the submarine cable )
+user already have a fromework cache
+
+you can linked it in your local bootstrap.dist that you download 
+and linked it to bootstrap.css
+but lead to a little bit more latency
+
+65. web design 101 wireframing
+
+before you design a website you have to do wireframing 
+low fedility ( simple )
+
+the opposite of wireframing is mockup 
+high fedility ( it's like exactly what you want to look )
+
+awwwarrd.com 
+ui-pattern.com ( example for the website )
+
+simple sketch > mock up > prototype 
+the inspiration is called dribbble.com
+
+start to make wireframe
+start to make it by pen and paper 
+industry standard tool is balsamiq.cloud 
+
+66. the bootstrap navigation bar
+
+you can put another style outside the bootstrap just linked it to the css 
+
+you have to see the guidline and the rule go to the bootstrap and go to document 
+
+you go to buttons documentation to see color by using the word
+
+ms-auto ( margin start auto )
+
+when the display smaller navbar should be hambergur menu
+
+70. bootstrap grid layout system 
+
+the smaller device the image width and the font the size got bigger
+
+layout using grid layout 
+in bootstrap the total of a single row is 12 col
+
+74. bootstrap containers
+
+container to contain section 
+
+75. bootstrap button & fontawesome 
+
+fontawesome.com 
+it's perfect for searching icon
+
+commenting link i'ts importan
+
+76. styling our website challenge solution
+
+when you styling with bootstrap its good to make another class if you want to change a certain behavior and avoid changing the bootstrap value
+
+78. solution to bootsrap challenge 1
+
+you can use text-align center
+
+80. the bootstrap carousel part 1
+
+look at the bootstrap document in carousel and tab in on usage option to know how to change the setting 
+
+bootsnip.com
+for the snippet example 
+
+82. cards
+
+look at the card documentation and pricing example
+
+83. the css z-index and stacking order
+
+the z-index will not work if the box position is static. anything else is working. all the box must be positioned to effect one each other
+
+the detail in pdf section6
+
+84. Media Query Breakpoints
+
+https://search.google.com/test/mobile-friendly
+to check wether or not your website is mobile friendly
+
+if the website is not mobile friendly the google ranking will drop so not showing in google search page 1. and no one see page 2 page 3
+
+@media screen
+@media speech
+@media (max-width = 900px) (active when 900px lower) {
+@media (min-width = 900px) ( active when 900px higher) its target di opposite way
+@media (min-width = 900px) and (max-width = 900px)
+
+
+when the screen get smaller the features must be bigger
+
+87. how to become a better programmer - code refactoring
+
+code refactoring
+1. readability
+2. modularity
+how easy to narrow it down 
+how eady to reuse 
+3. efficiency
+how fast can your code run
+4. length
+shorter doesn't usually good
+
+code golf 
+codegolf.stackexchange.com 
+it's a challange to make code as short as possible
+
+dry = don't repeat yourself 
+
+88. refactoring our website part 1
+
+h1, h2, h3, h4, h5, h6 {
+ font-family = montserrat }
+
+use class not element so modulairity is higher
+
+padding usually goes to the container-fluid, so every section have container 
+
+combined selector 
+h1#title {}
+.container.title ( class ="container title" )
+
+section background color has class to dry the code
+
+higher ranking 
+id > classes > html element > inline css
+
+id it's for section it's functional for navigation as well
+
+avoid inline style at all cost
+
+make a new habit to go after the existing habit 
+
+95. introduction to a web design 
+
+most important thing in the website is look beautifull and work as i intended to
+
+you only have 3 seconds to make a good impression
+
+good design look expensive and professional 
+
+web design principles
+color theory 
+typography
+user interface design
+user experience design
+
+96. uderstanding the color theory 
+
+color picking have to be aware from the mood
+
+red
+love
+energy
+intensity
+
+yellow
+joy
+intellect
+attention
+
+green
+freshness
+safety
+growth
+
+blue
+stability 
+trust
+serenity
+
+purple
+royalty
+wealth
+femininity
+
+combining color
+
+acalogous colors
+choose color cext to color main in color pallete
+( harmony )
+
+complementary colors
+choose color opposite to color main in color pallete, dont put it in for background color and a text 1 to each other
+( pop more )
+
+triadic color 
+square color
+use adobecolor.com to see color combination 
+use colorhunt.co for sing the color scheme
+
+97. understanding typography and how to choose a font 
+
+font family
+serif ( have little feet )
+more serious but older as well 
+traditional, stable, respectable
+serif subdivision
+old style 
+transitional
+modern
+slab-serif
+
+sans-serif
+sensible simple straightforward
+friendly approacable
+sans-serif subdivision 
+grotesque
+neo-grotesque
+humanist ( highly readable )
+geometric
+
+script
+personal cretive elegant
+
+display
+friendly loud amusing 
+
+modern
+stylish chic smart
+exp didot for vogue mag
+ 
+when you looking for legebility
+open shapes
+ample intercharacter spacing
+unambiguous forms
+varying proportions
+
+2 font in 1 design 
+look for 2 font with
+similar mood 
+similar time era
+contrast serif-ness (1 font serif 1 font sans serif ) 
+contrast weight
+
+think about what you wanna convey with the type faces
+
+98. manage attention with effective user interface (ui) design
+
+1. hierarchy
+color
+very bright and muted color to know where to focus first
+size 
+big to small to know where to focus first 
+
+2. layout 
+length of text 45ch to 75ch
+
+3. alighnment 
+consistency is key for alignment text 
+
+reduce the number of the alignment 
+to look professional 
+
+use grid line 
+
+4. white space 
+adding more space make more minimalist and professional 
+
+5. audience
+depend on the audience
+
+as long as fit to the audience it's fine 
+
+99. user experience (ux) design 
+
+1. simplicity 
+
+2. consistency 
+
+3. reading patterns
+the f pattern 
+use the f-layout
+use the z-layout
+
+4. all platform design
+mobile responsive is important 
+don't have so many banner on the screen
+
+5. don't use your powers for evil 
+
+dark pattern. make user do something that user don't want 
+
+100. web design in practice
+
+dailyui.com
+collectui.com
+canva.com
+
+>>>>>>>>>>>><<<<<<<<<<
+JAVASCRIPT
+
+101. introduction of javascript
+
+brendan eich create javascript in 10days
+
+europian computer manufactur script es ecma script 
+
+javascript is interpreted programming language
+java compiled programming language
+
+javascript the one who browser most compatible 
+
+102. javascript alert system - adding behaviours to a website
+
+go to console to type some of javascript 
+for ex alert("hello"); pop up will appear with hello text 
+
+holding shift to go to the next line 
+
+use inspect sources snippets new snippets and type code control enter to excecute
+
+function("message");
+no spaces 
+single and double quotes are the same 
+the programmer usually use to double quotes
+
+github.com/rwaldron/idiomatic.js
+priciples of writing consistent, idiomatic javascript
+
+103. data types
+
+data types
+string is a data types 
+numbers
+boolean true or false
+
+104. javascript variable
+
+var myName = "angela";
+keyword name = "value";
+
+var stand for the word variable 
+
+107. naming and naming convention for javascript variables
+
+how to clear the command ctrl+k
+how to clear the memory cache of the data in console > hold on reload and hard reload > ctrl + shift + R
+
+always give your variable meaningfull name 
+
+you can't name variable var 
+you can't name variable 123 or number first 
+you can't name variable with space my name
+you can't name variable with dash -
+you only can name the variable abs 123 $ _
+
+alyas give variable name with camel chacing myName 
+
+108. string concatenation 
+109. string length and retrieving the number of characters
+
+word.length
+
+when you tabbed out from the prompt that existing and empty it will be null and it will be error
+
+110. slicing and extracting part of string 
+
+always start with zero 
+a b c
+0 1 2
+name.slice(0,1);
+a 
+name.slice(4.9);
+9 - 4 five character 
+
+111.challenge : changing chasing in text
+
+word.toUpperCase()
+
+112.challenge : changing string casing solution
+
+programmer skill taking a big problem chunking it down breaking it down to smaller pieces if still stuck in that smaller pieces chunking it down again 
+
+113. basic arithmetic and the modulo operator in javascript 
+
+()
+*
+/
++
+-
+
+% ( modulo )
+var 2 = 9 % 6 >>> 3 ( the remainder of the number 9 divided by 6 ) 
+
+prompt value is string but it can be used as number what???
+
+114. increment and decrement expression 
+
+var  = 5;
+x = x + 1 or x++ // 6
+x = x - 1 or  x-- // 4
+x = x + 2 or x += 2 // 7
+x = x + y or x += y // 5+y
+
+its the same 
+x *= 2
+x /= 2
+x -= 2
+x += 2
+
+x= 3;
+y = x++;
+y+=1; (3+1=4)
+
+1. Post Increment (x++)
+2. Pre Increment(++x)
+
+After post incrementing y will have no relation with x so y will have the assigned value 3 and x will be incremented to 4
+
+bisa dibilang hasilnya bercabang
+y = x++
+
+y = x and x = x + 1
+
+jadi x digunakan 2 kali 
+
+115. function part 1: creating and calling function 
+
+function is grouping the series of codes and can be call by 1 code 
+
+function getMilk() {  ...  }
+how to call
+getmilk();
+
+console.log = it will log the value inside the console 
+
+alert is the user can see
+console.log is for the developer only
+
+116. functions part 1 challenge - the karel robot 
+
+stanford.edu/~cpiech/karel/ide.html
+
+119. functions part 2 - parameters and arguments
+
+function getMilk(input) {.....}
+
+function getMilk (bottles) {
+  var cost = bottles * 1.5;
+}
+how to call it 
+getMilk(2);
+
+120. function part 3 : output and returns value
+
+function getMilk (money) {
+   var changecash = money % 1.5 ;
+   return changecash;
+}
+how to call it 
+var change = getMilk(4);
+
+125. random number generator in javascript: building a love calculator
+
+ var n = Math.random();
+the result is 16 decimal places number 
+between 0 - 0.9999999999999999 > (9 nya ada 16 kali)
+
+dice
+var n = Math.random();
+n = n * 6;
+n = Math.floor(n);
+
+function randomValue(min, max) {
+    var randomVal= Math.floor(Math.random() * ((max - min) + 1)) + min;
+    return randomVal;
+}
+
+random and pseudorandom generator its diferrent 
+
+126. control statement: using if & else conditional and logic
+
+using if & else >> control flow
+
+if (track === "clear") {
+    goStraight();
+} else {
+    turnRight();
+}
+
+127. comparator and equality
+
+=== is equal to
+!== is not equal to 
+> is greater than
+< is lesser than 
+>= is greater or equal to 
+<= is lesser or equal to 
+
+the different between == and === is the === is also checking the data type are matching or not 
+1 and "1" for == is the same but for === its different 
+
+128. combining comparator 
+
+&& and 
+|| or 
+! not 
+
+it's important if you don't understand the logic make a flow chart out of it 
+
+131. collection: working with javascript arrays
+
+var eggs = [a,b,c,d,e,f]
+                   0 1 2 3 4 5
+how to call it 
+var myEgg = eggs[1]; b
+var myEgg = eggs.length; 5
+eggs.includes(); the output is boolean
+
+if comparator is boolean don't need to compare (=== true) just write
+if (boolean) {}
+
+132. adding element and intermediate array tecnique
+
+codinghorror.com
+
+eggs.push(); always push it at the end 
+eggs.pop(); push out the last item in arrays
+
+order in java script is matter
+
+if you use a bunch of if and then else at the end the if else function that work is the last if and else. but if you use if else if and  else it will be 1 pair 
+
+134. control statement: while loops
+
+while (something is true) {
+    //Do something
+}
+
+var i = 1;
+while(i<2) {
+  console.log(i);
+  i++;
+}
+
+if while loop keep true it will be crash 
+
+136. control statements. for loops
+
+ for (var i=0; i<2; i++) {....}
+        start end change
+
+while is checking for a state 
+( while player 1 is alive, repeatadly play the loop)
+
+for is you trying to iterate
+trying to run the code many many time with for loop define the count
+
+140. adding javascript to a website
+
+onload="alert('hello');" > when the element is loaded up
+
+the quotation mark is has to be different " ' so it doesn't miss read which is the code which is the string
+
+try to avoid inline javascript 
+
+to use internal javascript use
+<script type="text/javascript"> 
+
+</script>
+
+try to use external javascript 
+<script src="index.js" charset="ust-8"> 
+
+</script>
+
+the javascript <script> text placement should be below before </body>
+try to think the order of the style and script in the html
+the html referencing the style.css
+javascript refferencing the html > so when there is no reference in html javascript can't load
+
+141. introduction to the document object model (DOM)
+
+html tree generator extention
+
+document is outside the html 
+
+var heading = document.firstElementChild.lastElementChild.firstElementChild; > in console
+heading.innerHTML = "good bye"; > to change the value inside the html element 
+heading.style.color = "red"; to change the properties of the html element 
+document.querySelector("input").click(); > look inside the entire document for the object that has a selector of input >> method  .click(); > simulate the mouse click ( it will be clicking the input )
+
+object inside the dom can have properties and method
+object is the element 
+
+properties exp
+innerHTML
+style
+firstChild
+
+methods
+click()
+appendchild()
+setAttribute()
+
+
+to get the value of the properties 
+car.colours >> getter ( get property )
+
+to set the value of the properties
+car.numberOfDoors = 0; >> setting ( set the property )
+
+method
+car.drive(); >> call method
+
+the different between method and function is 
+method is something the object can do. so it should be associated with the object
+car.drive()
+object.method();
+
+var third = document.querySelector("ul").lastElementChild;
+third.innerHTML = "you";
+
+143. Selecting HTML element with javascript
+
+document.getElementsByTagName("li");
+the elements is plural so the result is array of all list that exist in document 
+
+property can't set in the array, but if you select the specific value of the array you can change the properties
+document.getElementsByTagName("li")[2].style.color = "purple";
+document.getElementsByTagName("li").length;
+
+document.getElementsByClassName("list");
+document.getElementsByClassName("list")[1].style.color = "green";
+
+document.getElementById("heading")
+document.getElementById("heading").innerHTML = "good bye";
+it's not plural cause there is only 1 id for 1 html. 
+
+document.querySelector("h1");
+document.querySelector("h1").innerHTML = "sayorana";
+document.querySelector("#heading").innerHTML = "sayor";
+document.querySelector(".list").innerHTML = "sayor";
+document.querySelector("li.list");
+document.querySelector("#li a");
+you can put an element, a class, or an id > the way it work it's to specify it like you do in CSS. if you get more than 1 element from querySelector you only select the first one.
+if you want to get all the element you'll use querySelectorAll but because the output is array if you want to change it you have to specify the index
+document.querySelectorAll("li");
+
+remember that in CSS li.list is the same hirarki but li .list parent child hirariki
+
+usually use querySelectorAll or querySelector
+
+144. Manipulating and changing style of HTML element with Javascript 
+
+javascript naming method and properties is using chamel case
+the name from css is usually the same just use chamel case and no spacing 
+you can find the naming for html dom style object documentation in w3schools.com
+so changing value in javascript the value must be string 
+
+145. the separation of concerns: structured vs style vs behavior 
+
+html content only 
+css to style
+javascript to behavior
+
+document.querySelector("button").classList.add("inv");
+document.querySelector("button").classList.remove("inv");
+document.querySelector("button").classList.toggle("inv");
+
+146. text manipulation and text content property
+
+the differrent between innerHTML and textContent is 
+the innerHTML will change all the thing inside the element for exp 
+inside p there is strong and content, the strong and content will be catch and can be change = "<em>good Bye</em>";
+
+document.querySelector(".list1").innerHTML;
+<strong>home</strong>
+document.querySelector(".list1").textContent;
+home
+
+147. manipulating html element atribute
+
+document.querySelector("a").attributes; > get the result and its plural
+NamedNodeMap {0: href, href: href, length: 1}
+document.querySelector("a").getAttribute("href"); >> get the result and its singular
+'https://www.google.com'
+document.querySelector("a").setAttribute("href", "https://www.bing.com"); >> set the upcoming value

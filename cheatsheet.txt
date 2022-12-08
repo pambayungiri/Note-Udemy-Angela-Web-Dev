@@ -1,0 +1,604 @@
+NEW CODE HTML
+!
+<!DOCTYPE html>
+HTML ENTITIES CODE 
+&gt;
+&copy;
+&lt;
+&nbsp;
+&amp;
+ELEMENT
+<html>
+<meta>
+<head>
+<body>
+<title>
+<h1> - <h6>
+<p>
+<link>
+<hr>
+<br>
+<em>
+<strong>
+<abbr>
+<address>
+<!-- -->
+<ol>
+<li>
+<ul>
+<dl>
+<dt>
+<dd>
+<a>
+<nav>
+<section>
+<download>
+<img>
+<figure>
+<figcaption>
+<code>
+<header>
+<main>
+<footer>
+<article>
+<aside>
+<details>
+<summary>
+<mark>
+<time>
+<div>
+<span>
+<table>
+<tr>
+<td>
+<th>
+<caption>
+<thead>
+<tbody>
+<tfoot>
+<form>
+<fieldset>
+<legend>
+<label>
+<input>
+<datalist>
+<select>
+<optgroup>
+<option>
+<center>
+<cite> citation
+<style> for css
+<q>
+NEW CODE CSS
+SELECTOR
+* universal selector
+element selector
+.class selector
+#id selector
+h1, h2 group selector (both h1 and h2)
+h1 h2 (looking for h2 nested inside of h1)
+
+transform: translateX(50%);
+transform: translateY(5rem);
+transform: translate(100%, -5rem);
+transform: rotatex(110deg);
+transform: rotateY(80deg);
+transform: rotatez(90deg); or transform: rotate(90deg);
+transform: scalex(120%);
+transform: scaleY(50%);
+transform: scale(30%, 50%);
+transform: skewX(10deg);
+transform: skewY(-10deg);
+transform: skew(10deg, 10deg);
+
+transition-property: background-color, transform;
+transition-duration: 2s, 3s; 
+transition-delay: 1s;
+transition: all 2s 0.5s; propoerty duration delay
+transition-timing-function: ease-in; ease ease-out ease-in and out
+
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+animation-direction: alternate; alternate-reverse normal reverse
+animation-fill-mode: forwards; 
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(600px) rotate(180deg);
+  }
+  66% {
+    transform: translateX(-1600px) rotate(-180deg);
+  }
+  100% {
+    transform: translateX(0);
+    background-color: rebeccapurple;
+  }
+}
+
+
+
+
+PSEUDO ELEMENT
+::marker
+.card figcaption::before
+.card figcaption::after
+.card figcaption::first-letter
+.card figcaption::first-line
+PSEUDO CLASS
+a:visited
+a:link
+a:any-link ( link and visited )
+a:hover, a:focus
+a:active
+li:nth-child(2)(odd)(even)
+li:last-child
+.box:first-child
+nav :is(a:hover,a:focus)
+:is(header, footer) specificity 001
+:where(header, footer) specificity 000
+.card:target
+.card img[alt] > we choose img that has and alt attribute
+.card img:not([alt]) >we choose img that not has and alt att
+:root
+article p:first-of-type
+
+
+PROPERTY
+color
+background
+background-color
+
+font-size
+font-weight
+font-style
+font-family
+font
+font: inherit;
+text-transform
+text-decoration
+text-align
+text-indent
+letter-spacing
+word-spacing
+
+cursor
+opacity 0-1 
+
+border
+border-top right left bottom
+border-style
+border-width
+border-color
+border-radius
+height
+min-height
+max-height
+line-height
+width
+max-width
+min-width
+padding
+margin
+margin-inline(left right)
+box-sizing 
+outline
+outline-offset
+
+list-style
+list-style-type
+list-style-position
+list-style-image: url(../checkmark.png);
+content
+
+display
+
+float
+clear
+overflow: auto;
+
+columns
+column-count
+column-width
+column-rule
+column-gap
+column-span
+break-inside
+break-before: column; > not recommended
+break-after: column; > not recommended
+white-space: nowrap;
+
+position
+z-index
+top 
+left -10000px
+right 
+bottom
+scroll-behavior: smooth;
+scroll-padding: 1rem 0 0 0 > so it's scroll after top navbar
+
+display: flex;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly > newer value much better to use
+gap: 1rem;
+align-item: flex-start;
+align-item: flex-end;
+align-item: flex-center;
+flex-direction: column;
+flex-direction: column-reverse;
+flex-direction: row;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+flex-flow: row wrap; ( flex-direction + flex-wrap )
+align-content: flex-start;
+align-content: flex-end;
+align-content: flex-center;
+align-content: space-around;
+align-content: space-between;
+align-content: space-evenly;
+flex-basis: 100px or 40%;
+flex-grow: 1;
+flex-shrink: 1;
+flex ( flex-grow flex-shrink flex-basis )
+order: 1 or 0 or -1; similar to z-index;
+
+display: grid;
+grid-auto-flow: row;
+grid-auto-flow: column;
+grid-template-columns: 2fr 1fr 1fr;
+grid-template-columns: repeat(4, 1fr ); 4column 1 fraction
+grid-template-columns: repeat(2, 1fr 2fr ); 2column 2 fraction
+grid-template-rows
+grid-auto-columns
+grid-auto-rows: 200px;
+grid-auto-rows: minmax(150px, auto);
+row-gap:
+column-gap:
+gap: 1rem 2rem;  row column
+grid-column-start:1;
+grid-column-end:4;
+grid-row-start:1;
+grid-row-end: 3;
+grid-colum: 1 / 4; start / end
+grid-row: 1 / 3; start / end
+nested display:grid 
+align-content: center;
+justify-content: center;
+place-content: end center; ( align content justify content )
+place-content: center; (both align and justify )
+grid-template-areas: "hd"
+grid-area: hd;
+
+border-radius 50%
+background-color: rgb(251, 210, 156);
+background-image: url('../img/pat1.png');
+background-repeat: no-repeat;
+background-repeat: repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-size: cover;
+background-size: contain;
+background-size: 100%;
+text-shadow: 2px 2px 5px black;
+background-position: center;
+background-position: top right;
+background-position: bottom left;
+background-image: url(../img/bubbles.png),linear-gradient(to left,steelblue, white);
+background-repeat: repeat-y, no-repeat;
+background-position: right center;
+background-size: 20%, auto;
+-webkit-background-clip: text;
+color: rgba(0, 0, 0, 0);
+color: transparent;
+background-clip: text;
+background: > not recommended
+background: repeat-y right center url(../img/bubbles.png) , no-repeat linear-gradient(to left, steelblue, white); (background repeat position image, background2 repeat position image)
+
+@media screen and (min-width: 481px)
+@media screen and (orientation: landscape)
+@media screen and (min-aspect-ratio: 16/9 or 7/4) width / height
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4)
+calc
+@media (prefers-color-scheme: dark) > to change personalize color dark
+
+box-shadow: 0 6px 5px -5px var(--DARK-COLOR);
+filter: brightness(150%);
+filter: hue-rotate(180deg);
+content: attr(data-tooltip);
+grid-template-columns: repeat(4, minmax(100px, 300px));
+PROPERTY VALUE
+color: gray;
+font-style: italic;
+text-transform: uppercase;
+background-color: gold;
+border: 3px solid black;
+font: inherit;
+.tooltip:hover::before {
+  content: attr(data-tooltip);
+}
+
+JAVASCRIPT
+
+alert("hello");
+alert(2+3);
+typeof(23); number
+prompt("what is your name?");
+var myName = "angela";
+alert("My name is " + myName + ", welcome to my course " + yourName + "!");
+console.log("a is " + a);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+myName.length;
+myName.slice(0,1);
+myName.toUpperCase();
+myName.toLowerCase();
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+x = x + 1 or x++ // 6
+x = x - 1 or  x-- // 4
+x = x + 2 or x += 2 // 7
+x *= 2
+x /= 2
+x -= 2
+x += 2
+1. Post Increment (x++)
+2. Pre Increment(++x)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function getMilk() {  ...  }
+how to call >>> getmilk();
+
+function getMilk (bottles) {
+  var cost = bottles * 1.5;
+}
+how to call it 
+getMilk(2);
+
+function getMilk (money) {
+   var changecash = money % 1.5 ;
+   return changecash;
+}
+how to call it 
+var change = getMilk(4);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Math.floor(3.7); >> 3
+Math.round(3.7); >> 4
+Math.pow(2,3); >> 8
+Math.random()
+Math.abs();
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+if (randomValue === 100) {
+    
+} 
+else if (....){
+
+}
+else {
+    
+}
+== is equal to
+=== is equal to with the type as well
+!== is not equal to 
+> is greater than
+< is lesser than 
+>= is greater or equal to 
+<= is lesser or equal to 
+
+&& and 
+|| or 
+! not 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ARRAY
+var eggs = [a,b,c,d,e]
+how to call it 
+var myEgg = eggs[1]; b
+var myEgg = eggs.length; 5
+eggs.includes(); the output is boolean
+eggs.push();
+eggs.pop();
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+while (.....) {....}
+ for (var i=0; i<2; i++) {....}
+        start end change
+
+JAVA SCRIPT DOM
+
+onload="alert('hello');"
+<script src="index.js" charset="ust-8"> 
+document.querySelector("h1").innerHTML = "Good Bye";
+var heading = document.firstElementChild.lastElementChild.firstElementChild; > in console
+heading.innerHTML = "good bye";
+heading.style.color = "red";
+document.querySelector("input").click();
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+document.getElementsByTagName("li")[2].style.color = "purple";
+document.getElementsByClassName("list")[1].style.color = "green";
+document.getElementById("heading").innerHTML = "good bye";
+document.querySelector(".list").innerHTML = "sayor";
+document.querySelectorAll("li");
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+document.querySelector("button").classList.add("inv");
+document.querySelector("button").classList.remove("inv");
+document.querySelector("button").classList.toggle("inv");
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+document.querySelector(".list1").innerHTML;
+document.querySelector(".list1").textContent;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+document.querySelector("a").attributes;
+document.querySelector("a").getAttribute("href"); 
+document.querySelector("a").setAttribute("href", "https://www.bing.com");
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+document.querySelector("button").addEventListener("click", handleClick);
+
+function handleClick() {
+  alert("i got clicked);
+}
+
+document.querySelector("button").addEventListener("click", function () { alert("i got clicked); }
+);
+
+element.addEventListener(event, function(event){ console.log(event) } )
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+function add(num1, num2) {
+    var result = num1 + num2;
+    return result;
+}
+function sub(num1, num2) {
+    var result = num1 - num2;
+    return result;
+}
+function mtp(num1, num2) {
+    var result = num1 * num2;
+    return result;
+}
+function dvd(num1, num2) {
+    var result = num1 / num2;
+    return result;
+}
+
+function calculator(num1, num2, operator) {
+    var result = operator(num1, num2);
+    return result;
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+var audio = new Audio('sounds/tom-1.mp3');
+    audio.play();
+
+document.querySelectorAll("button")[i].addEventListener("click", handleClick);
+
+function handleClick() {
+    this.style.color = "red";
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+var bellBoy1 = {
+  name: "Timmy",
+  age: 19,
+  hasWorkPermit: true,
+  languages: ["French", "English"]
+}
+
+to call individual value in there use 
+bellBoy1.name >> Timmy
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+}
+
+tocall it/ use it/ initialise it
+var bellBoy1 = new BellBoy("Timmy", 19, true, ["French","English"]);
+
+var bellBoy1 = {
+  name: "Timmy",
+  age: 19,
+  hasWorkPermit: true,
+  languages: ["French", "English"]
+  moveSuitcase: function() {
+    alert("may I take your suitcase?")
+    pickUpSuitcase();
+    move();
+  }
+}
+
+call the methods
+bellBoy1.moveSuitcase();
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+  this.moveSuitcase: function() {
+    alert("may I take your suitcase?")
+    pickUpSuitcase();
+    move();
+  }
+}
+
+how to call the function 
+housekeeper1.clean();
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    switch (key) {
+        case value:
+            
+            break;
+    
+        default:
+            break;
+    }
+
+
+NEW SHORTCUT VS CODE
+CTRL + enter = to go to new line 
+CTRL + arrow left + right = to go word by word
+Shift + arrow left + right = to highlight the word
+CTRL + p = command pallate to find a file name and open it
+CTRL + g = go to line 
+CTRL + d = to highlight word 
+CTRL + d 2x = hightlight the same word that you have highlighted
+alt + click = set multiple cursor
+CTRL + x or CTRL + c = no need to highlight if you want to copy or cut a line
+alt + arrow up or arrow down = to move a line
+alt + shift + up or down = copy the line as you move it 
+CTRL + l = highlight line by line 
+CTRL + / = toggle comments
+CTRL + [ or ] = to indent outdent the line
+CTRL + alt + tab = to go to different tab
+CTRL + shift + o = go to symbol
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CTRL + shift + m = go to problem
+F8 or shift + F8 = go to next problem or previous problem
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+CTRL + h = replace
+CTRL + space = trigger suggestion
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CTRL + up or down = to scroll line
+CTRL + page up or page down = to scroll page 
+or just page up and page down = to scroll page with cursor
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+CTRL + b = file tree
+down // shift + k = to go to the end of the line 
+
+BOOTSTRAP
+navbar
+navbar-nav
+nav-item
+nav-link
+navbar-expand-lg
+navbar-dark
+bg-dark
+navbar-brand
+
+row
+col
+col-1,col-2,-,col-12 !total12 per row 
+col-lg-3,col-sm-6 > lg md sm 
+
+container
+container-fluid
